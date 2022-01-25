@@ -1,0 +1,6 @@
+name: BetterSurvival
+version: '${project.version}'
+main: dev.ruster.bettersurvival.Main
+api-version: 1.18
+authors: [ Ruster ]
+description: A plugin to improve the survival mode

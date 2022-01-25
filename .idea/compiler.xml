@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Annotation profile for BetterSurvival" enabled="true">
+        <sourceOutputDir name="../../Documents/Minecraft/Dev/Localhost/1.18.1/plugins/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../Documents/Minecraft/Dev/Localhost/1.18.1/plugins/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="BetterSurvival" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="BetterSurvival" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

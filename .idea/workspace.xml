@@ -4,7 +4,30 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa18199f-4eed-469b-b98b-21f75a756deb" name="Changes" comment="" />
+    <list default="true" id="fa18199f-4eed-469b-b98b-21f75a756deb" name="Changes" comment="Chat, Spawner and Gravestone done ! Code is not optimise">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/entities/SurvivalPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/BlockPlaceListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/utils/ItemBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/players.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_papermc_paper_paper_api_1_18_1_R0_1_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_papermc_paper_paper_api_1_18_1_R0_1_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/ListenerRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/ListenerRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/entities/GraveStone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/entities/GraveStone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/AsyncPlayerChatListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/AsyncPlayerChatListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/BlockBreakListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/BlockBreakListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/InventoryCloseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/InventoryCloseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerDeathListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerDeathListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerInteractListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerInteractListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerJoinListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerJoinListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerQuitListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerQuitListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/utils/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/utils/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/utils/Utils.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +43,44 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Record" />
       </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1643077811" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1643077810" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
     </option>
   </component>
   <component name="MarkdownSettingsMigration">
@@ -38,6 +98,7 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="249bDEGF9e5caybd2PeUS6FyjFY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -45,6 +106,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
     <property name="dart.analysis.tool.window.visible" value="false" />
@@ -53,15 +115,19 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="build.tools" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="dev.ruster.bettersurvival.events" />
-      <recent name="dev.ruster.bettersurvival.listeners" />
       <recent name="dev.ruster.bettersurvival.utils" />
+      <recent name="dev.ruster.bettersurvival.listeners" />
       <recent name="dev.ruster.bettersurvival" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Eliott\IdeaProjects\BetterSurvival\src\main\java\dev\ruster\bettersurvival\utils" />
     </key>
   </component>
   <component name="RunManager">
@@ -134,11 +200,30 @@
       <option name="presentableId" value="Default" />
       <updated>1643045631171</updated>
       <workItem from="1643045633118" duration="37000" />
-      <workItem from="1643045692473" duration="7544000" />
+      <workItem from="1643045692473" duration="8640000" />
+      <workItem from="1643199058545" duration="16000" />
+      <workItem from="1643199106077" duration="5416000" />
+      <workItem from="1643206975814" duration="164000" />
+      <workItem from="1643210525199" duration="18469000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Chat, Spawner and Gravestone done ! Code is not optimise" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chat, Spawner and Gravestone done ! Code is not optimise" />
   </component>
 </project>

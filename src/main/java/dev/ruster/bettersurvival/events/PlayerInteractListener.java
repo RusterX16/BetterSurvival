@@ -2,44 +2,73 @@ package dev.ruster.bettersurvival.events;
 
 import dev.ruster.bettersurvival.Main;
 import dev.ruster.bettersurvival.entities.GraveStone;
-import org.bukkit.Material;
+import dev.ruster.bettersurvival.entities.SurvivalPlayer;
+import dev.ruster.bettersurvival.utils.GUI;
+import dev.ruster.bettersurvival.utils.Utils;
+import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.inventory.ItemStack;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.Map;
+import java.util.concurrent.atomic.AtomicReference;
+import java.util.stream.IntStream;
 
-public class PlayerInteractListener implements Listener {
-
-    private final Main main;
-
-    public PlayerInteractListener(Main main) {
-        this.main = main;
-    }
+public record PlayerInteractListener(Main main) implements Listener {
 
     @EventHandler
     public void onPlayerInteract(@NotNull PlayerInteractEvent e) {
         Player player = e.getPlayer();
         Block block = e.getClickedBlock();
         Action action = e.getAction();
+        ItemStack item = player.getItemInHand();
+        SurvivalPlayer sp = SurvivalPlayer.getPlayerFromBukkitPlayer(player);
 
         if(block != null && block.getType() == Material.SKELETON_SKULL) {
-            if(action == Action.RIGHT_CLICK_BLOCK) {
-                for(Map.Entry<GraveStone, Player> entry : main.getPlayersGraveStones().entrySet()) {
-                    GraveStone gs = entry.getKey();
-                    Player p = entry.getValue();
+            AtomicReference<GraveStone> atomic = new AtomicReference<>();
+            sp.getGraveStones().stream()
+                    .filter(gs -> Utils.isSameLocation(gs.getLocation(), block.getLocation()))
+                    .forEach(atomic::set);
 
-                    if(player == p) {
-                        gs.getGUI().open();
-                        break;
+            if(action == Action.RIGHT_CLICK_BLOCK) {
+                if(atomic.get() != null) {
+                    if(player.isSneaking()) {
+                        GUI gui = atomic.get().getGUI();
+                        ItemStack[] content = gui.getInventory().getContents();
+                        IntStream.range(0, 36)
+                                .filter(i -> content[i] != null && content[i].getType() != Material.AIR)
+                                .forEach(i -> sp.set(i, content[i]));
+                        sp.helmet(gui.get(40));
+                        sp.chestplate(gui.get(39));
+                        sp.leggings(gui.get(38));
+                        sp.boots(gui.get(37));
+                        player.getInventory().setItemInOffHand(gui.get(41));
+                        sp.level(atomic.get().getLevel());
+                        sp.exp(atomic.get().getExp());
+                        gui.clear();
+                        block.setType(Material.AIR);
+                        Bukkit.getOnlinePlayers().forEach(p -> p.playSound(player.getLocation(), Sound.BLOCK_STONE_BUTTON_CLICK_OFF, 1F, 1F));
+                    } else {
+//                        atomic.get().getGUI().open(sp);
                     }
                 }
-            } else if(action == Action.LEFT_CLICK_BLOCK && player.isSneaking()) {
+            }
+        }
 
+        if((action == Action.RIGHT_CLICK_BLOCK || action == Action.RIGHT_CLICK_AIR) && item.getType() == Material.EXPERIENCE_BOTTLE) {
+            if(item.hasItemMeta() && item.getItemMeta().hasDisplayName() && item.getItemMeta().getDisplayName().startsWith("§aExpérience perdue")) {
+                AtomicReference<GraveStone> atomic = new AtomicReference<>();
+                sp.getGraveStones().stream()
+                        .filter(gs -> Utils.isSameLocation(gs.getLocation(), block.getLocation()))
+                        .forEach(atomic::set);
+
+                sp.exp(atomic.get().getExp());
+                sp.level(atomic.get().getLevel());
+                item.setType(Material.AIR);
             }
         }
     }

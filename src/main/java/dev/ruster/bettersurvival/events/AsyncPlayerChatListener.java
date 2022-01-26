@@ -7,13 +7,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.jetbrains.annotations.NotNull;
 
-public class AsyncPlayerChatListener implements Listener {
-
-    private final Main main;
-
-    public AsyncPlayerChatListener(Main main) {
-        this.main = main;
-    }
+public record AsyncPlayerChatListener(Main main) implements Listener {
 
     @EventHandler
     public void onAsyncPlayerChat(@NotNull AsyncPlayerChatEvent e) {

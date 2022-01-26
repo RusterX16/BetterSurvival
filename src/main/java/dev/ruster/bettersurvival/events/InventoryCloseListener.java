@@ -14,13 +14,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.stream.IntStream;
 
-public class InventoryCloseListener implements Listener {
-
-    private final Main main;
-
-    public InventoryCloseListener(Main main) {
-        this.main = main;
-    }
+public record InventoryCloseListener(Main main) implements Listener {
 
     @EventHandler
     public void onInventoryClose(@NotNull InventoryCloseEvent e) {

@@ -17,6 +17,7 @@ public class ListenerRegister {
     private static void registerListener(Main main) {
         PluginManager pm = Bukkit.getPluginManager();
 
+        pm.registerEvents(new BlockPlaceListener(main), main);
         pm.registerEvents(new BlockBreakListener(main), main);
         pm.registerEvents(new PlayerJoinListener(main), main);
         pm.registerEvents(new PlayerQuitListener(main), main);

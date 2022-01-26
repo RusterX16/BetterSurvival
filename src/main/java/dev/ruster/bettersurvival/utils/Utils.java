@@ -1,5 +1,6 @@
 package dev.ruster.bettersurvival.utils;
 
+import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
@@ -20,5 +21,15 @@ public class Utils {
         meta.setOwningPlayer(player);
         item.setItemMeta(meta);
         return item;
+    }
+
+    public static boolean isSameLocation(@NotNull Location loc1, @NotNull Location loc2) {
+        return Math.round(loc1.getX()) == Math.round(loc2.getX()) &&
+                Math.round(loc1.getY()) == Math.round(loc2.getY()) &&
+                Math.round(loc1.getZ()) == Math.round(loc2.getZ());
+    }
+
+    public static String firstLetterInCapital(@NotNull String string) {
+        return string.substring(0, 1).toUpperCase() + string.substring(1).toLowerCase();
     }
 }

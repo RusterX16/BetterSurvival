@@ -9,13 +9,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.jetbrains.annotations.NotNull;
 
-public class PlayerQuitListener implements Listener {
-
-    private final Main main;
-
-    public PlayerQuitListener(Main main) {
-        this.main = main;
-    }
+public record PlayerQuitListener(Main main) implements Listener {
 
     @EventHandler
     public void onPlayerQuit(@NotNull PlayerQuitEvent e) {

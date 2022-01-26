@@ -1,12 +1,8 @@
 package dev.ruster.bettersurvival;
 
-import dev.ruster.bettersurvival.entities.GraveStone;
-import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.util.Map;
 
 public final class Main extends JavaPlugin {
 

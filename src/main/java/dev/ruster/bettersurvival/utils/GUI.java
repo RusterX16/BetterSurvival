@@ -1,7 +1,7 @@
 package dev.ruster.bettersurvival.utils;
 
+import dev.ruster.bettersurvival.entities.SurvivalPlayer;
 import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.jetbrains.annotations.NotNull;
@@ -11,9 +11,9 @@ public class GUI {
     private final Inventory inventory;
     private final String title;
     private final int size;
-    private Player player;
+    private SurvivalPlayer player;
 
-    public GUI(String title, int row, Player player) {
+    public GUI(String title, int row, SurvivalPlayer player) {
         this(title, row);
         this.player = player;
     }
@@ -28,8 +28,9 @@ public class GUI {
         inventory.addItem(item);
     }
 
-    public void set(int slot, ItemStack item) {
+    public GUI set(int slot, ItemStack item) {
         inventory.setItem(slot, item);
+        return this;
     }
 
     public void open() {
@@ -39,8 +40,16 @@ public class GUI {
         open(player);
     }
 
-    public void open(@NotNull Player player) {
+    public void open(@NotNull SurvivalPlayer player) {
         player.openInventory(inventory);
+    }
+
+    public boolean isEmpty() {
+        return inventory.isEmpty();
+    }
+
+    public void clear() {
+        inventory.clear();
     }
 
     public Inventory getInventory() {
@@ -53,5 +62,9 @@ public class GUI {
 
     public int getSize() {
         return size;
+    }
+
+    public ItemStack get(int slot) {
+        return inventory.getItem(slot);
     }
 }

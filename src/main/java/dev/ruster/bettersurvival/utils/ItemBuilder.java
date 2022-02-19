@@ -43,6 +43,7 @@ public class ItemBuilder {
         unbreakable = true;
     }
 
+    @SuppressWarnings("deprecation")
     public ItemBuilder displayName(String name) {
         this.name = name;
         meta.setDisplayName(name);
@@ -68,24 +69,28 @@ public class ItemBuilder {
         return this;
     }
 
+    @SuppressWarnings("deprecation")
     public ItemBuilder lore(List<String> lore) {
         this.lore.addAll(lore);
         meta.setLore(lore);
         return this;
     }
 
+    @SuppressWarnings("deprecation")
     public ItemBuilder lore(String... lines) {
         lore.addAll(Arrays.asList(lines));
         meta.setLore(lore);
         return this;
     }
 
+    @SuppressWarnings("deprecation")
     public ItemBuilder append(String line) {
         lore.add(line);
         meta.setLore(lore);
         return this;
     }
 
+    @SuppressWarnings("deprecation")
     public ItemBuilder insert(int index, String line, boolean override) {
         if(!override) {
             append("");
@@ -99,6 +104,7 @@ public class ItemBuilder {
         return this;
     }
 
+    @SuppressWarnings("deprecation")
     public ItemBuilder modify(int index, String text) {
         if(lore.get(index) == null) {
             throw new NullPointerException("Index " + index + " in lore of " + this.getClass() + " does not exist");
@@ -108,6 +114,7 @@ public class ItemBuilder {
         return this;
     }
 
+    @SuppressWarnings("deprecation")
     public ItemBuilder remove(int index, boolean tighten) {
 /*        if(tighten) {
             for(int i = lore.size() - 1; i >= index; i--) {
@@ -119,6 +126,7 @@ public class ItemBuilder {
         return this;
     }
 
+    @SuppressWarnings("deprecation")
     public ItemBuilder clear() {
         lore.clear();
         meta.setLore(lore);

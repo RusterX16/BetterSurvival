@@ -29,7 +29,7 @@ public class Utils {
                 Math.round(loc1.getZ()) == Math.round(loc2.getZ());
     }
 
-    public static String firstLetterInCapital(@NotNull String string) {
+    public static @NotNull String firstLetterInCapital(@NotNull String string) {
         return string.substring(0, 1).toUpperCase() + string.substring(1).toLowerCase();
     }
 }

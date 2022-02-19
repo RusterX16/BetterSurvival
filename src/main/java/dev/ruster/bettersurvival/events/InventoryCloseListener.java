@@ -16,6 +16,7 @@ import java.util.stream.IntStream;
 
 public record InventoryCloseListener(Main main) implements Listener {
 
+    @SuppressWarnings("deprecation")
     @EventHandler
     public void onInventoryClose(@NotNull InventoryCloseEvent e) {
         Player player = (Player) e.getPlayer();

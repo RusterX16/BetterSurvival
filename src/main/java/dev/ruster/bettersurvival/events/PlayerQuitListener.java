@@ -11,13 +11,15 @@ import org.jetbrains.annotations.NotNull;
 
 public record PlayerQuitListener(Main main) implements Listener {
 
+    @SuppressWarnings("deprecation")
     @EventHandler
     public void onPlayerQuit(@NotNull PlayerQuitEvent e) {
         Player player = e.getPlayer();
+
         String message = Utils.LOG_IN_OUT_MESSAGE
                 .replace("*", "§c-")
                 .replace("$p", "§e" + player.getName())
-                .replace("$c", "§c" + Bukkit.getOnlinePlayers().size())
+                .replace("$c", "§c" + (Bukkit.getOnlinePlayers().size() - 1))
                 .replace("$m", "§e" + Bukkit.getMaxPlayers());
         e.setQuitMessage(message);
     }

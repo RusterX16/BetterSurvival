@@ -9,11 +9,12 @@ import org.jetbrains.annotations.NotNull;
 
 public record AsyncPlayerChatListener(Main main) implements Listener {
 
+    @SuppressWarnings("deprecation")
     @EventHandler
     public void onAsyncPlayerChat(@NotNull AsyncPlayerChatEvent e) {
         Player player = e.getPlayer();
         String message = e.getMessage();
-        String format = "§f$p §8» $m";
+        String format = "§f$p §7» $m";
 
         e.setFormat(format.replace("$p", player.getName()).replace("$m", message));
         e.setMessage(message);

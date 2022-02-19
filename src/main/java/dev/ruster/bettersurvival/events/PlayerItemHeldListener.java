@@ -16,6 +16,8 @@ public record PlayerItemHeldListener(Main main) implements Listener {
     @EventHandler
     public void onPlayerItemHeld(@NotNull PlayerItemHeldEvent e) {
         Player player = e.getPlayer();
+        int slot = e.getNewSlot();
+        int previous = e.getPreviousSlot();
 
         ItemStack main = player.getInventory().getItemInMainHand();
         ItemStack off = player.getInventory().getItemInOffHand();

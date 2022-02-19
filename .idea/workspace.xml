@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa18199f-4eed-469b-b98b-21f75a756deb" name="Changes" comment="Adding pointer on grave">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerRespawnListener.java" afterDir="false" />
+    <list default="true" id="fa18199f-4eed-469b-b98b-21f75a756deb" name="Changes" comment="Fixing Compass give">
       <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/ListenerRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/ListenerRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/BlockBreakListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/BlockBreakListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerDeathListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerDeathListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerInteractListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerInteractListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/AsyncPlayerChatListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/AsyncPlayerChatListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerItemHeldListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerItemHeldListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerRespawnListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerRespawnListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +209,8 @@
       <workItem from="1645218062629" duration="3271000" />
       <workItem from="1645277091926" duration="1057000" />
       <workItem from="1645278179268" duration="679000" />
-      <workItem from="1645287588999" duration="2262000" />
+      <workItem from="1645287588999" duration="2632000" />
+      <workItem from="1645293020852" duration="2029000" />
     </task>
     <task id="LOCAL-00001" summary="Chat, Spawner and Gravestone done ! Code is not optimise">
       <created>1643238989601</created>
@@ -232,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645289462218</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixing Compass give">
+      <created>1645289888395</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1645289888395</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +262,7 @@
     <MESSAGE value="Adding logger on death" />
     <MESSAGE value="Adding pointer on tomb" />
     <MESSAGE value="Adding pointer on grave" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding pointer on grave" />
+    <MESSAGE value="Fixing Compass give" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing Compass give" />
   </component>
 </project>

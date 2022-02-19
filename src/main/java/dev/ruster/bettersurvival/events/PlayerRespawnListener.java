@@ -1,8 +1,6 @@
 package dev.ruster.bettersurvival.events;
 
 import dev.ruster.bettersurvival.Main;
-import dev.ruster.bettersurvival.utils.ItemBuilder;
-import org.bukkit.Material;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerRespawnEvent;
@@ -12,6 +10,6 @@ public record PlayerRespawnListener(Main main) implements Listener {
 
     @EventHandler
     public void onPlayerRespawn(@NotNull PlayerRespawnEvent e) {
-        e.getPlayer().getInventory().addItem(new ItemBuilder(Material.COMPASS).displayName("§eVotre tombe").build());
+//        e.getPlayer().getInventory().addItem(new ItemBuilder(Material.COMPASS).displayName("§eVotre tombe").build());
     }
 }

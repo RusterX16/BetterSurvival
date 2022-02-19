@@ -23,3 +23,13 @@ v
 Fsrc/main/java/dev/ruster/bettersurvival/events/PlayerQuitListener.java,7\3\739c3f53d82a27780d13ad6ee778bfb28360fb39
 h
 8src/main/java/dev/ruster/bettersurvival/utils/Utils.java,4\6\4605ec3da7f64b18b866d469d0373d5ecfa2fe92
+s
+Csrc/main/java/dev/ruster/bettersurvival/entities/PlayerManager.java,a\4\a43ff6a738126596d38e25b0c675adf1d7b65b6d
+v
+Fsrc/main/java/dev/ruster/bettersurvival/events/BlockBreakListener.java,9\f\9fb1b6fca31ae2752b74e739b4de1f991547d47d
+m
+=src/main/java/dev/ruster/bettersurvival/ListenerRegister.java,2\d\2db8d0d1b6a82af0935d2043860b9b56aaa06389
+z
+Jsrc/main/java/dev/ruster/bettersurvival/events/PlayerInteractListener.java,9\a\9a8280fe40894048a4613be83de7d58f2c32f742
+w
+Gsrc/main/java/dev/ruster/bettersurvival/events/PlayerDeathListener.java,a\c\ace90539bdc3248e2310296bae3e83216b830405

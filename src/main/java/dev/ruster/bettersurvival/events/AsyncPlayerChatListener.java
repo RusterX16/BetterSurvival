@@ -12,11 +12,7 @@ public record AsyncPlayerChatListener(Main main) implements Listener {
     @SuppressWarnings("deprecation")
     @EventHandler
     public void onAsyncPlayerChat(@NotNull AsyncPlayerChatEvent e) {
-        Player player = e.getPlayer();
-        String message = e.getMessage();
-        String format = "§f%1$s §7» %2$s";
-
-        e.setFormat(format.replace("%1$s", player.getName()).replace("%2$s", message));
-        e.setMessage(message);
+        String format = "§f%1$s_§7»_%2$s";
+        e.setFormat(format.replace("_", " "));
     }
 }

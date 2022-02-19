@@ -24,12 +24,13 @@ public class ListenerRegister {
         pm.registerEvents(new PlayerJoinListener(main), main);
         pm.registerEvents(new PlayerQuitListener(main), main);
         pm.registerEvents(new PlayerInteractListener(main), main);
+        pm.registerEvents(new PlayerItemHeldListener(main), main);
         pm.registerEvents(new InventoryCloseListener(main), main);
         pm.registerEvents(new PlayerDeathListener(main), main);
         pm.registerEvents(new AsyncPlayerChatListener(main), main);
     }
 
     private static void registerCommands(@NotNull Main main) {
-        throw new UnsupportedOperationException("Not implemented yet");
+
     }
 }

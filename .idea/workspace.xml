@@ -5,26 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa18199f-4eed-469b-b98b-21f75a756deb" name="Changes" comment="Adding logger on death">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/io/IOManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/entities/PlayerManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerItemHeldListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/ListenerRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/ListenerRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/entities/GraveStone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/entities/GraveStone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/entities/SurvivalPlayer.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/AsyncPlayerChatListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/AsyncPlayerChatListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/BlockBreakListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/BlockBreakListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/BlockPlaceListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/BlockPlaceListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/InventoryCloseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/InventoryCloseListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerDeathListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerDeathListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerInteractListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerInteractListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerJoinListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerJoinListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerQuitListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerQuitListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/utils/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/utils/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/utils/ItemBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/utils/ItemBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/utils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,8 +111,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="dev.ruster.bettersurvival.commands" />
       <recent name="dev.ruster.bettersurvival.events" />
+      <recent name="dev.ruster.bettersurvival.commands" />
       <recent name="dev.ruster.bettersurvival.utils" />
       <recent name="dev.ruster.bettersurvival.listeners" />
       <recent name="dev.ruster.bettersurvival" />
@@ -221,7 +209,9 @@
       <workItem from="1645141884854" duration="2936000" />
       <workItem from="1645217882385" duration="157000" />
       <workItem from="1645218062629" duration="3271000" />
-      <workItem from="1645277091926" duration="974000" />
+      <workItem from="1645277091926" duration="1057000" />
+      <workItem from="1645278179268" duration="679000" />
+      <workItem from="1645287588999" duration="1628000" />
     </task>
     <task id="LOCAL-00001" summary="Chat, Spawner and Gravestone done ! Code is not optimise">
       <created>1643238989601</created>
@@ -230,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643238989601</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adding logger on death">
+      <created>1645278091230</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1645278091230</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -14,9 +14,9 @@ public record AsyncPlayerChatListener(Main main) implements Listener {
     public void onAsyncPlayerChat(@NotNull AsyncPlayerChatEvent e) {
         Player player = e.getPlayer();
         String message = e.getMessage();
-        String format = "§f$p §7» $m";
+        String format = "§f%1$s §7» %2$s";
 
-        e.setFormat(format.replace("$p", player.getName()).replace("$m", message));
+        e.setFormat(format.replace("%1$s", player.getName()).replace("%2$s", message));
         e.setMessage(message);
     }
 }

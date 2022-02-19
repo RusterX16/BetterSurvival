@@ -6,8 +6,6 @@ J.idea/libraries/Maven__io_papermc_paper_paper_api_1_18_1_R0_1_SNAPSHOT.xml,c\f
 a
 1src/main/java/dev/ruster/bettersurvival/Main.java,a\4\a4d7d3604455a8b719d6557ea195d37e7066d8d4
 v
-Fsrc/main/java/dev/ruster/bettersurvival/events/BlockBreakListener.java,9\f\9fb1b6fca31ae2752b74e739b4de1f991547d47d
-v
 Fsrc/main/java/dev/ruster/bettersurvival/events/BlockPlaceListener.java,c\1\c1eda6426ca46b0051a03ce66534c9e8a308a827
 p
 @src/main/java/dev/ruster/bettersurvival/entities/GraveStone.java,c\8\c81e1aed657561c2b8604a79b91738ed9136eef3
@@ -19,8 +17,6 @@ i
 9src/main/java/dev/ruster/bettersurvival/io/IOManager.java,9\2\92fb436d2d947cb196efa41bcfc7fce7ffb1d739
 n
 >src/main/java/dev/ruster/bettersurvival/utils/ItemBuilder.java,1\7\17954b6a0f5ea399c2c9d363fe4a3747b3c96a05
-z
-Jsrc/main/java/dev/ruster/bettersurvival/events/PlayerInteractListener.java,9\a\9a8280fe40894048a4613be83de7d58f2c32f742
 v
 Fsrc/main/java/dev/ruster/bettersurvival/events/PlayerJoinListener.java,6\2\624e6de767e7803b38fffa682945827512a9bad5
 v

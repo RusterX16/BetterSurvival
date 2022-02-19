@@ -2,6 +2,7 @@ package dev.ruster.bettersurvival.events;
 
 import dev.ruster.bettersurvival.Main;
 import dev.ruster.bettersurvival.entities.GraveStone;
+import dev.ruster.bettersurvival.entities.PlayerManager;
 import dev.ruster.bettersurvival.utils.GUI;
 import dev.ruster.bettersurvival.utils.Utils;
 import org.bukkit.Bukkit;
@@ -58,6 +59,7 @@ public record PlayerInteractListener(Main main) implements Listener {
                 Bukkit.getOnlinePlayers().forEach(p ->
                         p.playSound(player.getLocation(), Sound.BLOCK_STONE_BUTTON_CLICK_OFF, 1F, 1F));
                 GraveStone.GRAVE_STONE_LIST.remove(atomic.get());
+                PlayerManager.PLAYER_DEATH_LOCATION.remove(player, PlayerManager.PLAYER_DEATH_LOCATION.get(player));
             }
         }
     }

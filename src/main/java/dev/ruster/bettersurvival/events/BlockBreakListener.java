@@ -2,6 +2,7 @@ package dev.ruster.bettersurvival.events;
 
 import dev.ruster.bettersurvival.Main;
 import dev.ruster.bettersurvival.entities.GraveStone;
+import dev.ruster.bettersurvival.entities.PlayerManager;
 import dev.ruster.bettersurvival.utils.GUI;
 import dev.ruster.bettersurvival.utils.ItemBuilder;
 import dev.ruster.bettersurvival.utils.Utils;
@@ -63,6 +64,7 @@ public record BlockBreakListener(Main main) implements Listener {
             e.setDropItems(false);
             block.setType(Material.AIR);
             GraveStone.GRAVE_STONE_LIST.remove(atomic.get());
+            PlayerManager.PLAYER_DEATH_LOCATION.remove(player, PlayerManager.PLAYER_DEATH_LOCATION.get(player));
         }
     }
 }

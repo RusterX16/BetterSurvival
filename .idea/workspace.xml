@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa18199f-4eed-469b-b98b-21f75a756deb" name="Changes" comment="Fixing Compass give">
+    <list default="true" id="fa18199f-4eed-469b-b98b-21f75a756deb" name="Changes" comment="Fixing chat format">
       <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/AsyncPlayerChatListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/AsyncPlayerChatListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerItemHeldListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerItemHeldListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerRespawnListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/ruster/bettersurvival/events/PlayerRespawnListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,6 +207,7 @@
       <workItem from="1645278179268" duration="679000" />
       <workItem from="1645287588999" duration="2632000" />
       <workItem from="1645293020852" duration="2029000" />
+      <workItem from="1645311778264" duration="158000" />
     </task>
     <task id="LOCAL-00001" summary="Chat, Spawner and Gravestone done ! Code is not optimise">
       <created>1643238989601</created>
@@ -240,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645289888395</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fixing chat format">
+      <created>1645311834013</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1645311834013</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +267,7 @@
     <MESSAGE value="Adding pointer on tomb" />
     <MESSAGE value="Adding pointer on grave" />
     <MESSAGE value="Fixing Compass give" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing Compass give" />
+    <MESSAGE value="Fixing chat format" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing chat format" />
   </component>
 </project>

@@ -33,3 +33,7 @@ z
 Jsrc/main/java/dev/ruster/bettersurvival/events/PlayerInteractListener.java,9\a\9a8280fe40894048a4613be83de7d58f2c32f742
 w
 Gsrc/main/java/dev/ruster/bettersurvival/events/PlayerDeathListener.java,a\c\ace90539bdc3248e2310296bae3e83216b830405
+z
+Jsrc/main/java/dev/ruster/bettersurvival/events/PlayerItemHeldListener.java,1\1\1100c12d7353bef908d48fdc46132a1e7e832b51
+y
+Isrc/main/java/dev/ruster/bettersurvival/events/PlayerRespawnListener.java,7\0\708d03a7e90d291f11c6ad0ec0a3232e3536d5fb
